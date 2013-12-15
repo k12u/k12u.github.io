@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://k12u.github.io
+url: http://k12u.github.io/
 title: K12u's Blog
 subtitle: Random things
 author: KAWAMOTO, Minoru
@@ -63,7 +63,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user: k12u
+github_user: 
 github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
