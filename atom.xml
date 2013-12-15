@@ -4,13 +4,32 @@
   <title><![CDATA[K12u's Blog]]></title>
   <link href="http://k12u.github.io/atom.xml" rel="self"/>
   <link href="http://k12u.github.io/"/>
-  <updated>2013-11-23T01:45:57+09:00</updated>
+  <updated>2013-12-16T01:31:40+09:00</updated>
   <id>http://k12u.github.io/</id>
   <author>
-    <name><![CDATA[k12u]]></name>
+    <name><![CDATA[KAWAMOTO, Minoru]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[忘年会で久々に会った人に、「Facebook(笑)。先輩がゲームやってるのが流れるだけなんで見ないです(笑)」と言われないための業界人としてのたしなみ]]></title>
+    <link href="http://k12u.github.io/blog/2013/12/16/howto-suppress-spamming-your-facebook-timeline/"/>
+    <updated>2013-12-16T01:06:28+09:00</updated>
+    <id>http://k12u.github.io/blog/2013/12/16/howto-suppress-spamming-your-facebook-timeline</id>
+    <content type="html"><![CDATA[<p>タイトルは多少の脚色と誇張が混じっているもののおおむね実話です。</p>
+
+<p>PCブラウザの場合はこの辺をいじります。</p>
+
+<p><img src="http://k12u.github.io/images/desktop.png"></p>
+
+<p>モバイルの場合はこの画面はとりあえずよしとすると(よくないという話もありますが)
+<img src="http://k12u.github.io/images/mobile_profile.png"></p>
+
+<p>この画面で設定を[自分のみ]にしておくとよいです。アプリによっては[スキップ]が吉なものも。
+<img src="http://k12u.github.io/images/mobile_timeline.png"></p>
+]]></content>
+  </entry>
   
 </feed>
