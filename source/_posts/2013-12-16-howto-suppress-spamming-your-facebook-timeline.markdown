@@ -12,7 +12,9 @@ PCブラウザの場合はこの辺をいじります。
 {% img /images/desktop.png %}
 
 モバイルの場合はこの画面はとりあえずよしとすると(よくないという話もありますが)
+
 {% img /images/mobile_profile.png %}
 
 この画面で設定を[自分のみ]もしくは[スキップ]にしておくとよいです。
+
 {% img /images/mobile_timeline.png %}
