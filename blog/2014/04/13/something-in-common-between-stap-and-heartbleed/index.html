@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Heartbleed と STAP細胞の2つの話題についてまるっと思ったこと - K12u's Blog</title>
+  <meta name="author" content="KAWAMOTO, Minoru">
+
+  
+  <meta name="description" content="Heartbleedの問題の影響や原因が明らかになってきたあたりで、STAP細胞に関する議論でモヤモヤしていた部分に意外なつながりがあるような気がしてきた。 Heartbleedに関して、前提として踏まえている記事はこのあたりなのでこの辺を事前に読んでいただくのが吉。 http:// &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://k12u.github.io//blog/2014/04/13/something-in-common-between-stap-and-heartbleed">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="K12u's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">K12u's Blog</a></h1>
+  
+    <h2>Random things</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:k12u.github.io/" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Heartbleed と STAP細胞の2つの話題についてまるっと思ったこと</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-13T18:37:12+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Heartbleedの問題の影響や原因が明らかになってきたあたりで、STAP細胞に関する議論でモヤモヤしていた部分に意外なつながりがあるような気がしてきた。</p>
+
+<p>Heartbleedに関して、前提として踏まえている記事はこのあたりなのでこの辺を事前に読んでいただくのが吉。</p>
+
+<ul>
+<li><a href="http://cpplover.blogspot.jp/2014/04/theo-de-raadtietf.html">http://cpplover.blogspot.jp/2014/04/theo-de-raadtietf.html</a></li>
+<li><a href="http://cpplover.blogspot.jp/2014/04/openbsd.html">http://cpplover.blogspot.jp/2014/04/openbsd.html</a></li>
+<li><a href="http://cpplover.blogspot.jp/2014/04/openssl.html">http://cpplover.blogspot.jp/2014/04/openssl.html</a></li>
+</ul>
+
+
+<p>STAP細胞で自分の周りでよく議論になっていたことの一つに、</p>
+
+<ol>
+<li>本質的な研究成果の中心そのもの</li>
+<li>研究を発表/公開する作法</li>
+</ol>
+
+
+<p> どちらがどの程度大事で、特に2.に大きな瑕疵がある場合、1はどのように評価されるべきかといったものだった。立場としてはばっくり分けると</p>
+
+<ul>
+<li>1.のみが本質的に重要で2なんてどうでもいいよ派</li>
+<li><ol>
+<li>はとても重要で 2.がだめなら1.も価値がないよ派</li>
+</ol>
+</li>
+</ul>
+
+
+<p>に分けることができる(極論です)。</p>
+
+<p>Heartbleedの件でソフトウェア開発者として改めて痛感したことは、何らかの基盤を支える技術には
+基盤としての重要度に応じた制度設計、ディスカッション、リリースエンジニアリング、ソフトウェア設計が欠かせないということだ。</p>
+
+<ul>
+<li>信頼性のないチップ</li>
+<li>信頼性のないストレージ</li>
+<li>信頼性のないネットワーク</li>
+<li>信頼性のないOS</li>
+<li>信頼性のないライブラリ</li>
+<li>信頼性のないプログラミング言語</li>
+<li>信頼性のないコンパイラ</li>
+<li>信頼性のないブラウザ</li>
+<li>信頼性のないクライアントスクリプト環境</li>
+</ul>
+
+
+<p> どれをとってみても、より上層の何かを作る人間にとって信頼性のないプラットフォームというのは地獄に近い。</p>
+
+<p> 一方で科学の分野でこのような信頼性の連鎖から連鎖する仕組みを想起してみると、これは、</p>
+
+<ul>
+<li>実験の作法としての正しさ</li>
+<li>研究成果の発表の作法としての正しさ</li>
+<li>研究者や研究機関の倫理観に対する信頼性</li>
+</ul>
+
+
+<p>などにあると思う(自分は科学者としては甚だ不完全なのでおそらくこれはとても不完全なリストだと思う)。</p>
+
+<p> STAP細胞の件で2を重視するかどうかの姿勢はこのあたりの「基盤」と「応用」の信頼の積み重ねに対する意識の違いに現れているような気がする。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">KAWAMOTO, Minoru</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-13T18:37:12+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/platform/'>platform</a>, <a class='category' href='/blog/categories/science/'>science</a>, <a class='category' href='/blog/categories/security/'>security</a>, <a class='category' href='/blog/categories/technology/'>technology</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://k12u.github.io//blog/2014/04/13/something-in-common-between-stap-and-heartbleed/" data-via="k12u" data-counturl="http://k12u.github.io//blog/2014/04/13/something-in-common-between-stap-and-heartbleed/" >Tweet</a>
+  
+  
+
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+
+  <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/12/16/howto-suppress-spamming-your-facebook-timeline/" title="Previous Post: 忘年会で久々に会った人に、「Facebook(笑)。先輩がゲームやってるのが流れるだけなんで見ないです(笑)」と言われないための業界人としてのたしなみ">&laquo; 忘年会で久々に会った人に、「Facebook(笑)。先輩がゲームやってるのが流れるだけなんで見ないです(笑)」と言われないための業界人としてのたしなみ</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/something-in-common-between-stap-and-heartbleed/">Heartbleed と STAP細胞の2つの話題についてまるっと思ったこと</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/howto-suppress-spamming-your-facebook-timeline/">忘年会で久々に会った人に、「Facebook(笑)。先輩がゲームやってるのが流れるだけなんで見ないです(笑)」と言われないための業界人としてのたしなみ</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - KAWAMOTO, Minoru -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
