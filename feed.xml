@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <atom:link href="undefined/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link></link>
-    <description></description>
+    <title>K12u's Blog</title>
+    <atom:link href="http://k12u.org//feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://k12u.org/</link>
+    <description>Non-technical memorandums by a software engineer</description>
     <pubDate>Sun, 13 Apr 2014 09:00:00 +0900</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>HeartbleedとSTAP細胞に見る作法の大事さについて</title>
-      <link>undefined/articles/something-in-common-between-stap-and-heartbleed/</link>
+      <link>http://k12u.org//articles/something-in-common-between-stap-and-heartbleed/</link>
       <pubDate>Sun, 13 Apr 2014 09:00:00 +0900</pubDate>
-      <guid isPermaLink="true">undefined/articles/something-in-common-between-stap-and-heartbleed/</guid>
+      <guid isPermaLink="true">http://k12u.org//articles/something-in-common-between-stap-and-heartbleed/</guid>
       <author></author>
       <description>&lt;p&gt;Heartbleedの問題の影響と原因が明らかになってきたあたりで、STAP細胞に関する議論でモヤモヤしていた部分に意外なつながりがあるような気がしてきた。&lt;/p&gt;
 &lt;p&gt;Heartbleedに関して、前提として踏まえている記事はこのあたり。&lt;/p&gt;
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>忘年会で久々に会った人に、「Facebook(笑)。先輩がゲームやってるのが流れるだけなんで見ないです(笑)」と言われないための業界人としてのたしなみ</title>
-      <link>undefined/articles/howto-suppress-spamming-your-facebook-timeline/</link>
+      <link>http://k12u.org//articles/howto-suppress-spamming-your-facebook-timeline/</link>
       <pubDate>Mon, 16 Dec 2013 09:00:00 +0900</pubDate>
-      <guid isPermaLink="true">undefined/articles/howto-suppress-spamming-your-facebook-timeline/</guid>
+      <guid isPermaLink="true">http://k12u.org//articles/howto-suppress-spamming-your-facebook-timeline/</guid>
       <author></author>
       <description>&lt;p&gt;タイトルは多少の脚色と誇張が混じっているもののおおむね実話です。&lt;/p&gt;
 &lt;p&gt;PCブラウザの場合はこの辺をいじります。&lt;/p&gt;
