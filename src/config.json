@@ -1,0 +1,27 @@
+{
+  "Locals": {
+    "url": "http://k12u.org/",
+    "name": "K12u's Blog",
+    "owner": "Minoru KAWAMOTO",
+    "description": "Non-technical memorandums by a software engineer",
+    "output": "../"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
