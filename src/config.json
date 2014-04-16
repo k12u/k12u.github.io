@@ -1,10 +1,10 @@
 {
+  "output": "../",
   "locals": {
     "url": "http://k12u.org",
     "name": "K12u's Blog",
     "owner": "Minoru KAWAMOTO",
-    "description": "Non-technical memorandums by a software engineer",
-    "output": "../"
+    "description": "Non-technical memorandums by a software engineer"
   },
   "plugins": [
     "./plugins/paginator.coffee"
